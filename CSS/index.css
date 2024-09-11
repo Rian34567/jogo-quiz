@@ -1,0 +1,83 @@
+/* Reset básico para garantir que todos os navegadores tenham um comportamento consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#717174, #b5b6b6);
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+#containerQuiz {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(#ccc, #717174);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #1a07be;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pergunta {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #666666;
+    border-radius: 8px;
+    background: #b4b4b4;
+}
+
+.pergunta h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.pergunta input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Estilo dos botões */
+button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #4a90e2, #007aff); /* Gradiente do botão */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #007aff, #4a90e2); /* Gradiente invertido no hover */
+    transform: translateY(-3px); /* Leve elevação no hover */
+}
+
+button:active {
+    background: linear-gradient(135deg, #0063e5, #0056b3); /* Gradiente mais escuro ao clicar */
+    transform: translateY(1px); /* Leve afundamento ao clicar */
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
